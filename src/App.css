@@ -1,5 +1,71 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #E4F9F5;
+}
+
+.flex {
+    display: flex;
+}
+
+.container-2{
+    flex-direction: row;
+}
+
+h1 {
+    color: #4886a2;
+    
+}
+
+button {
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #30E3CA;
+    border: none;
+    margin-left: 10px;
+    color: #e9f8f8;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #1cb19d;
+}
+
+button:focus {
+    outline: none;
+}
+
+input {
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: lightblue;
+    border: none;
+    margin-left: 10px;
+    color: #40514E;
+}
+
+input:focus{
+    outline: none;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #bff8ed;
+}
+
+.card li {
+    padding: 5px;
+    list-style-type: none;
+}
+
 .strike{
     text-decoration: line-through;
 }
-
-
