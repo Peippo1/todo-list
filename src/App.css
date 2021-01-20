@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,6 +8,19 @@ body {
     background-color: #E4F9F5;
 }
 ​
+h1 {
+    color: #4886a2;
+}
+
+ul {
+    padding-left: 0;
+    border-radius: 20px;
+    background-color: #bff8ed;
+    list-style-type: none;
+    padding: 5px;
+}
+
+​
 .flex {
     display: flex;
 }
@@ -14,11 +28,15 @@ body {
 .container-2{
     flex-direction: row;
 }
-​
-h1 {
-    color: #4886a2;
+
+.strike {
+    text-decoration: line-through ;
 }
-​
+
+.list-item {
+    margin-bottom: 5px;
+}
+
 .submit-button {
     padding: 14px;
     font-size: 18px;
@@ -29,7 +47,7 @@ h1 {
     margin-left: 10px;
     color: #e9f8f8;
 }
-​
+
 .submit-button:hover {
     cursor: pointer;
     background-color: #1cb19d;
@@ -38,7 +56,8 @@ h1 {
 .submit-button:focus {
     outline: none;
 }
-​
+
+
 .addTask {
     padding: 14px;
     font-size: 18px;
@@ -52,20 +71,6 @@ h1 {
 ​
 .addTask:focus{
     outline: none;
-}l
-
-ul {
-    padding-left: 0;
-    border-radius: 20px;
-    background-color: #bff8ed;
-    list-style-type: none;
-    padding: 5px;
 }
 
-.list-item {
-    margin-bottom: 5px;
-}
 
-.strike {
-    text-decoration: line-through ;
-}
