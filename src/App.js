@@ -14,11 +14,11 @@ const App = () => {
 
 return (
   <div className= "App">
-    <h1>Add Task</h1>
+    <h1>To-do list</h1>
    <div className="container-2">
     <form onSubmit={handleSubmit}>
       <TodoInput name={currentTask} func={setCurrentTask}/>
-      <button type="submit">TREAT YO SELF</button>
+      <button className="submit-button" type="submit">Add</button>
     </form>
     <List items={storeList}/>
   </div>
@@ -27,10 +27,9 @@ return (
 
 };
     
-export default App
 
 const TodoInput = ({ name, func }) => (
-  <input value={name} onChange={(e) => func(e.target.value)}/>
+  <input className="addTask" value={name} onChange={(e) => func(e.target.value)}/>
 );
 
 const List = ({ items }) => {
@@ -47,13 +46,13 @@ const ListItem = ({ item }) => {
   const [check, setCheck] = useState(false)
 
   return (
-    <li className={`list-item ${check && "strike"}`}>
+    <li className={`${check ? "list-item strike" : "list-item"}`}>
       <input type="checkbox" value={check} onChange={() => setCheck(!check)} />
       {item.name}
     </li>
     );
 };
 
-// list-item { font, size, color }
 
-// list-item-ticked { text-dec, opacity }
+export default App
+

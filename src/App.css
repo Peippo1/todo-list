@@ -17,10 +17,9 @@ body {
 ​
 h1 {
     color: #4886a2;
-    
 }
 ​
-button {
+.submit-button {
     padding: 14px;
     font-size: 18px;
     font-weight: bold;
@@ -31,16 +30,16 @@ button {
     color: #e9f8f8;
 }
 ​
-button:hover {
+.submit-button:hover {
     cursor: pointer;
     background-color: #1cb19d;
 }
 ​
-button:focus {
+.submit-button:focus {
     outline: none;
 }
 ​
-input {
+.addTask {
     padding: 14px;
     font-size: 18px;
     font-weight: bold;
@@ -51,23 +50,22 @@ input {
     color: #40514E;
 }
 ​
-input:focus{
+.addTask:focus{
     outline: none;
-}
-​
-.card {
+}l
+
+ul {
+    padding-left: 0;
     border-radius: 20px;
-    padding: 30px;
     background-color: #bff8ed;
-}
-​
-.card li {
-    padding: 5px;
     list-style-type: none;
-}
-​
-.strike{
-    text-decoration: line-through;
+    padding: 5px;
 }
 
+.list-item {
+    margin-bottom: 5px;
+}
 
+.strike {
+    text-decoration: line-through ;
+}
