@@ -1,44 +1,59 @@
 import React, {useState} from "react";
 import "./App.css";
 
+
 const App = () => {
-  const [currentItem, setCurrentItem] = useState ("");
-  const [storeInput, setStoreInput] = useState([]);
+  const [currentTask, setCurrentTask] = useState("");
+  const [storeList, setStoreList] = useState([]);
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-    setStoreInput([...storeInput, setStoreInput, { item: currentItem}]);
-    setCurrentItem("");
+    setStoreList([...storeList, { name: currentTask }]);
+    setCurrentTask("");
   };
+
 return (
-  <div>
+  <div className= "App">
+    <h1>Add Task</h1>
+   <div className="container-2">
     <form onSubmit={handleSubmit}>
-      <TodoInput item={currentItem} func={setCurrentItem}/>
+      <TodoInput name={currentTask} func={setCurrentTask}/>
       <button type="submit">TREAT YO SELF</button>
     </form>
-    <List items={storeInput}/>
+    <List items={storeList}/>
+  </div>
   </div>
 );
 
 };
+    
+export default App
 
 const TodoInput = ({ name, func }) => (
   <input value={name} onChange={(e) => func(e.target.value)}/>
 );
 
-const List = ({ items }) => (
+const List = ({ items }) => {
+  return (
     <ul>
-      {items.map((item) => {
-        return <ListItem item={item} />;
-      })} 
-    </ul>  
-     );
-    const ListItem = ({ item }) => {
-    return (
-      <li>
-        {item.name},
-      </li>
-    );
-  }
+      {items.map((item, index) => {
+      return <ListItem key={index} item={item} />;
+    })}
+    </ul>
+  );
+}
 
-  export default App
-// check box toggle on off
+const ListItem = ({ item }) => {
+  const [check, setCheck] = useState(false)
+
+  return (
+    <li className={`list-item ${check && "strike"}`}>
+      <input type="checkbox" value={check} onChange={() => setCheck(!check)} />
+      {item.name}
+    </li>
+    );
+};
+
+// list-item { font, size, color }
+
+// list-item-ticked { text-dec, opacity }
