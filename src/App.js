@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>To-do list</h1>
+      <h1 className="heading">To-do list</h1>
       <div className="container-2">
         <form onSubmit={handleSubmit}>
           <TodoInput name={currentTask} func={setCurrentTask} />
@@ -23,6 +23,7 @@ const App = () => {
         </form>
         <List items={storeList} />
       </div>
+      <a className="dino" href="https://www.flaticon.com/authors/dinosoftlabs">Many thanks to DinosoftLabs for the Favicon</a>
     </div>
   );
 };
@@ -50,10 +51,11 @@ const ListItem = ({ item }) => {
 
   return (
     <li className={`${check ? "list-item strike" : "list-item"}`}>
-      <input type="checkbox" value={check} onChange={() => setCheck(!check)} />
+      <input class="check" type="checkbox" value={check} onChange={() => setCheck(!check)} />
       {item.name}
     </li>
   );
 };
+
 
 export default App;
