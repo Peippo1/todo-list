@@ -5,72 +5,75 @@ body {
     margin-top: 30px;
     justify-content: center;
     align-items: center;
-    background-color: #E4F9F5;
+    background-color: #A2D0C1;
 }
-​
-h1 {
-    color: #4886a2;
+.heading {
+    letter-spacing: 1.5px;
+    color: #214151;
+    text-align: center;
 }
-
 ul {
     padding-left: 0;
     border-radius: 20px;
-    background-color: #bff8ed;
+    
     list-style-type: none;
     padding: 5px;
+    color: #214151;
 }
-
-​
 .flex {
     display: flex;
 }
-​
 .container-2{
     flex-direction: row;
 }
-
 .strike {
     text-decoration: line-through ;
 }
-
 .list-item {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    background-color: #eff7e1;
+    border-radius: 20px;
+    padding: 15px
 }
-
 .submit-button {
     padding: 14px;
     font-size: 18px;
     font-weight: bold;
     border-radius: 20px;
-    background-color: #30E3CA;
+    background-color: #f8dc81;
     border: none;
     margin-left: 10px;
-    color: #e9f8f8;
+    color: #214151;
+    letter-spacing: 1.5px;
 }
-
 .submit-button:hover {
     cursor: pointer;
-    background-color: #1cb19d;
+    background-color: #dabe63;
 }
-​
 .submit-button:focus {
     outline: none;
 }
-
-
 .addTask {
     padding: 14px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     border-radius: 20px;
-    background-color: lightblue;
+    background-color: #eff7e1;
     border: none;
     margin-left: 10px;
     color: #40514E;
+    letter-spacing: 1.5px;
 }
-​
 .addTask:focus{
     outline: none;
 }
 
-
+.dino {
+    color: #214151;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+}
