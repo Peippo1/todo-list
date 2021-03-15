@@ -2,6 +2,8 @@
 
 Add list items and cross them of when they are completed.
 
-application created using React.
+Backend to be created for storage of information. 
 
-Todo application project for Code Nation Mastercourse 2020/21.
+Application created using React.
+
+To do application project for Code Nation Mastercourse 2020/21.
